@@ -51,3 +51,5 @@ email_util.py文件的使用
             for file in content["files"]:
                 with open("d:\\email_file\\"+file["name"],'wb') as f:
                     f.write(file['data'])
+
+代码参考了廖雪峰网站的收发邮件的代码，进行了一些修改和封装。代码还有一些不足，请大神帮忙看看
