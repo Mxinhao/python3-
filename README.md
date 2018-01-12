@@ -45,6 +45,11 @@ email_util.py文件的使用
         sender= emailUtil.get_sender(email)#获取发件人
         subject=emailUtil.get_subject(email)#获取主题
         cc=emailUtil.get_receive_cc(email)#获取抄送收件人
+        # Tue, 9 Jan 2018 01:29:00 +0800 (CST)  网易邮箱的日期格式
+        #将日期解析成常用的格式
+        senddate = int(time.mktime(time.strptime(senddate, "%a, %d %b %Y %H:%M:%S +%f (CST)")))
+        senddate = time.localtime(senddate)
+        senddate = time.strftime("%Y-%m-%d %H:%M:%S", senddate)
         content=emailUtil.get_mail_content(email)#获取邮件的内容和附件，返回的是字典
         #保存附件
         if "files" in content.keys():
