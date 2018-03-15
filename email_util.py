@@ -143,6 +143,7 @@ class email_util():
                 file['data'] = data
                 self.files.append(file)
                 self.text_content["files"] = self.files
+        self.files=[]
 #     获取邮件的内容,返回字典
     def get_mail_content(self,msg):
         if (msg.is_multipart()):
