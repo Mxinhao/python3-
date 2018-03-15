@@ -74,6 +74,7 @@ class email_util():
         return len(mails)
     #     获取并解码邮件，以邮件索引来获取邮件并返回
     def get_email(self,index):
+        self.files=[]
         server=self.get_pop_connection()
         resp, lines, octets = server.retr(index)
         msg_content = b'\r\n'.join(lines).decode("utf-8",errors="ignore" )
@@ -143,7 +144,7 @@ class email_util():
                 file['data'] = data
                 self.files.append(file)
                 self.text_content["files"] = self.files
-        self.files=[]
+        
 #     获取邮件的内容,返回字典
     def get_mail_content(self,msg):
         if (msg.is_multipart()):
