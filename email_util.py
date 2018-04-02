@@ -47,7 +47,7 @@ class email_util():
         smtpObj=self.get_connection()
         print("连接成功........")
         try:
-            smtpObj.sendmail(message["From"], message["To"], message.as_string())
+            smtpObj.sendmail(message["From"], message["To"].split(","), message.as_string())
             print("send email success")
         except Exception as e:
             raise MyException("send email fail")
