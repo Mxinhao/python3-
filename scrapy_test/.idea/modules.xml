@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../baiduAI/.idea/baiduAI.iml" filepath="$PROJECT_DIR$/../baiduAI/.idea/baiduAI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bi-uc-topic/.idea/bi-uc-topic.iml" filepath="$PROJECT_DIR$/../bi-uc-topic/.idea/bi-uc-topic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crawl_demo/.idea/crawl_demo.iml" filepath="$PROJECT_DIR$/../crawl_demo/.idea/crawl_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crawl_workspace/.idea/crawl_workspace.iml" filepath="$PROJECT_DIR$/../crawl_workspace/.idea/crawl_workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo/.idea/demo.iml" filepath="$PROJECT_DIR$/../demo/.idea/demo.iml" />
+      <module fileurl="file://D:\pychrmWorkspace\django_demo\.idea\django_demo.iml" filepath="D:\pychrmWorkspace\django_demo\.idea\django_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rapidsms_tut/.idea/rapidsms_tut.iml" filepath="$PROJECT_DIR$/../rapidsms_tut/.idea/rapidsms_tut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/scrapy_test.iml" filepath="$PROJECT_DIR$/.idea/scrapy_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../toutiao_uc/.idea/toutiao_uc.iml" filepath="$PROJECT_DIR$/../toutiao_uc/.idea/toutiao_uc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wenzhi/.idea/wenzhi.iml" filepath="$PROJECT_DIR$/../wenzhi/.idea/wenzhi.iml" />
+    </modules>
+  </component>
+</project>

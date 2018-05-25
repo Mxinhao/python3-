@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.6.1 (C:\Users\mengxinhao\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="demo" />
+    <orderEntry type="module" module-name="django_demo" />
+    <orderEntry type="module" module-name="crawl_demo" />
+    <orderEntry type="module" module-name="toutiao_uc" />
+    <orderEntry type="module" module-name="bi-uc-topic" />
+    <orderEntry type="module" module-name="crawl_workspace" />
+    <orderEntry type="module" module-name="wenzhi" />
+    <orderEntry type="module" module-name="baiduAI" />
+    <orderEntry type="module" module-name="rapidsms_tut" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
