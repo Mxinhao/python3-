@@ -30,7 +30,7 @@ Chrome
         driver.delete_all_cookies()
         将本地Chrome的使用数据传入
         options=webdriver.ChromeOptions()
-        options.add_argument("--user-data-dir="+r"C:\\Users\\mengxinhao\\appdata\\local\\Google\\Chrome\\User Data\\")
+        options.add_argument("--user-data-dir="+r"C:\\........\\appdata\\local\\Google\\Chrome\\User Data\\")
         不显示浏览器被自动化软件控制信息
         options.add_argument('disable-infobars')
         隐藏浏览器
@@ -117,7 +117,7 @@ Firfox
     1、获取webdriver对象
         from selenium.webdriver.firefox.options import Options
         #配置本地配置文件
-        profile = webdriver.FirefoxProfile("C:\\Users\\mengxinhao\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\xyzr60rp.default")
+        profile = webdriver.FirefoxProfile("")
         options=Options()
         option.add_argument("-headless") #隐藏浏览器
         driver = webdriver.Firefox(firefox_profile=profile,firefox_options=options)
