@@ -59,9 +59,37 @@ Chrome
 
         js = 'window.scrollTo(0, document.body.scrollHeight);' #window.scrollTo(0,10000);
         driver.execute_script(js)
+
     5、截取页面
 
         driver.save_screenshot("sss.png")
+
+    6、拖动元素
+
+        from selenium.webdriver.common.action_chains import ActionChains
+        source = driver.find_element_by_xpath("")
+        ActionChains(driver).drag_and_drop_by_offset(source,300,0).perform()
+        或
+        # 可以控制拖动速度
+        action = ActionChains(driver)
+        action.click_and_hold(source).perform()
+        for index in range(0,300):
+            try:
+                action.move_by_offset(index, 0).perform()  # 平行移动鼠标
+            except UnexpectedAlertPresentException:
+                break
+            action.reset_actions()
+            time.sleep(0.005)  # 等待停顿时间
+
+    7、等待某个元素出现
+
+        from selenium.webdriver.support.wait import WebDriverWait
+        #每0.5秒检查一次iframe是否出现，5秒超时
+        WebDriverWait(driver, 5, 0.5).until(lambda the_driver: the_driver.find_element_by_tag_name("iframe").is_displayed())
+
+    8、获取网页信息
+
+        driver.page_source
 
  PhantomJS
  
@@ -83,5 +111,13 @@ Chrome
         其他方法和chrome浏览器一样
 
     2、phantomjs截图是整个网页，chrome是浏览器显示的大小
- 
 
+Firfox
+
+    1、获取webdriver对象
+        from selenium.webdriver.firefox.options import Options
+        #配置本地配置文件
+        profile = webdriver.FirefoxProfile("C:\\Users\\mengxinhao\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\xyzr60rp.default")
+        options=Options()
+        option.add_argument("-headless") #隐藏浏览器
+        driver = webdriver.Firefox(firefox_profile=profile,firefox_options=options)
