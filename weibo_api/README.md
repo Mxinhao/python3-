@@ -3,12 +3,14 @@
 官方替供的python SDK是廖雪峰大神的，只基于python2的，sinaweibopy下的weibo.py支持python3的版本调用
 
 本目录下的get_token.py是获取access_token的程序
-使用方法如下    
+使用方法如下  
+
     1、补全程序中的变量信息
     2、将打印出的url复制粘贴到浏览器
     3、使用对应的微博账号进行登录，并点击授权
     4、将浏览器地址栏后面的code，粘贴到程序控制台并回车
     5、得到access_token
+    
 将access_token保存到对应数据里，以备后面程序使用
 
 weibo.py文件的使用
