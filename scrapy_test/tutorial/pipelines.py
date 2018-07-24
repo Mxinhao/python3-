@@ -24,6 +24,6 @@ class ToutiaoPipeline(object):
                 print("update article:" + article.title)
             else:
                 self.dbsession.add(article)
-                print("add article:" + article.title)
+
             self.dbsession.commit()
             return item
