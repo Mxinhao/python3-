@@ -63,6 +63,7 @@
         killall -9 jupyter-notebook
         nohup jupyter notebook >log.txt 2>&1 &
         先杀死jupyter notebook，再重新启动，这样就会只有8888端口在运行
+        这样每次想要重启jupyter时只需要运行start.sh即可
 
     4、代码补全
 
